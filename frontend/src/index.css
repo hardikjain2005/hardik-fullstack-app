@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Utility Classes */
+.btn {
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #d4af37;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #b8941f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(212, 175, 55, 0.3);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #d4af37;
+  border: 2px solid #d4af37;
+}
+
+.btn-secondary:hover {
+  background-color: #d4af37;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #d4af37;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.success-message {
+  color: #28a745;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Loading Spinner */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #d4af37;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

@@ -1,0 +1,157 @@
+.hero {
+  background: linear-gradient(135deg, rgba(26, 26, 26, 0.9), rgba(45, 45, 45, 0.9)),
+              url('../assets/shoes/1.jpeg') center/cover;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 40px 20px;
+}
+
+.hero-title {
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #d4af37;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.featured-products {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: #333;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #d4af37;
+  margin: 15px auto;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.section-footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.about-section {
+  padding: 80px 0;
+  background: #f8f8f8;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.placeholder-image {
+  font-size: 200px;
+  opacity: 0.3;
+}
+
+.contact-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-info h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.contact-form {
+  background: #f8f8f8;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content,
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+}
+
